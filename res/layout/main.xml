@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.google.android.maps.MapView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/mapview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:enabled="true"
+		android:clickable="true"
+		android:apiKey="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/LinearLayout01"
+		android:orientation="vertical"
+		android:gravity="right"
+		android:layout_alignParentRight="true"
+		android:layout_margin="10dp"
+		android:padding="5dp"
+		android:background="#44000000">
+		<CheckBox
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Satellite"
+			android:layout_gravity="left"
+			android:id="@+id/cbSatellite" />
+		<CheckBox
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Street"
+			android:layout_gravity="left"
+			android:id="@+id/cbStreet" />
+		<CheckBox
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Traffic"
+			android:layout_gravity="left"
+			android:id="@+id/cbTraffic" />
+	</LinearLayout>
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_margin="10dp"
+		android:id="@+id/btnGoTo"
+		android:text="Go to" />
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/btnMark"
+		android:text="Mark position"
+		android:layout_margin="10dp"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" />
+</RelativeLayout>

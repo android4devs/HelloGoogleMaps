@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:id="@+id/layout_root">
+	<TextView
+		android:id="@+id/TextView01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Type coordinates here: "
+		android:layout_margin="5dp" />
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:hint="Latitude"
+		android:id="@+id/etLat"
+		android:inputType="numberDecimal"
+		android:text="50.0544530059" />
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:hint="Longitude"
+		android:id="@+id/etLong"
+		android:inputType="numberDecimal"
+		android:text="19.93668526411" />
+</LinearLayout>
